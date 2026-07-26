@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fdf6e3; /* soft beige */
+  background-color: #fdf6e3; /* soft beige background */
 }
 
 /* Video at the top */
@@ -12,11 +12,10 @@ body {
   display: block;
 }
 
-/* Welcome section with background image (pic4) */
+/* Welcome section with pic4 background */
 .welcome {
-  background-image: url("images/pic4.png");
+  background: url("images/pic4.png") no-repeat center center;
   background-size: cover;
-  background-position: center;
   color: white;
   text-align: center;
   padding: 120px 20px;
@@ -38,25 +37,29 @@ body {
   margin: 10px 0;
 }
 
-/* Navigation menu with circular tabs */
+/* Navigation menu with circular beige tabs */
 nav {
-  background-color: #006400; /* dark green */
+  background-color: #006400; /* dark green bar */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 15px;
+  gap: 15px;
 }
 
 nav a {
   background-color: #fdf6e3; /* beige tabs */
   color: #006400;
   text-decoration: none;
-  margin: 10px;
-  padding: 15px 20px;
-  border-radius: 50%; /* circular tabs */
+  width: 80px;              /* fixed width */
+  height: 80px;             /* fixed height */
+  border-radius: 50%;       /* perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  display: inline-block;
   transition: background-color 0.3s, color 0.3s;
+  text-align: center;
 }
 
 nav a:hover {
