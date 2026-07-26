@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #fdf6e3; /* soft beige */
 }
 
 /* Video at the top */
@@ -23,12 +23,12 @@ body {
   position: relative;
 }
 
-/* Overlay to keep text readable */
+/* Overlay for readability */
 .welcome::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.4); /* semi-transparent dark filter */
+  background: rgba(0,0,0,0.4);
   z-index: 0;
 }
 
@@ -38,24 +38,30 @@ body {
   margin: 10px 0;
 }
 
-/* Navigation menu */
+/* Navigation menu with circular tabs */
 nav {
   background-color: #006400; /* dark green */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 15px;
 }
 
 nav a {
-  color: white;
+  background-color: #fdf6e3; /* beige tabs */
+  color: #006400;
   text-decoration: none;
-  margin: 10px 15px;
+  margin: 10px;
+  padding: 15px 20px;
+  border-radius: 50%; /* circular tabs */
   font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #006400;
+  color: #fdf6e3;
 }
 
 /* Image section */
