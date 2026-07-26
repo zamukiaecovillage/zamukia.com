@@ -1,18 +1,28 @@
-/* General reset */
+/* ==========================================================
+   General reset
+   ========================================================== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fdf6e3; /* soft beige background */
 }
 
-/* Video at the top */
+/* ==========================================================
+   Video at the top
+   ========================================================== */
 #heroVideo {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Welcome section with pic4 background */
+/* ==========================================================
+   Welcome section with pic4 background
+   ========================================================== */
 .welcome {
   background: url("images/pic4.png") no-repeat center center;
   background-size: cover;
@@ -37,7 +47,20 @@ body {
   margin: 10px 0;
 }
 
-/* Navigation menu with independent oval tabs */
+.welcome h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.welcome h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  opacity: 0.95;
+}
+
+/* ==========================================================
+   Navigation menu with independent oval tabs
+   ========================================================== */
 nav {
   background-color: #fdf6e3; /* beige background behind tabs */
   display: flex;
@@ -63,7 +86,9 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* Image section */
+/* ==========================================================
+   Image section
+   ========================================================== */
 .image-section {
   padding: 20px;
 }
@@ -75,4 +100,58 @@ nav a:hover {
   margin: 20px auto;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ==========================================================
+   Extra content sections (optional, keeps the theme going)
+   ========================================================== */
+.section-title {
+  text-align: center;
+  color: #228B22;
+  font-size: 2rem;
+  margin: 10px 0 5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: block;
+}
+
+footer {
+  background-color: #228B22;
+  color: #fdf6e3;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================
+   Responsive tweaks
+   ========================================================== */
+@media (max-width: 600px) {
+  .welcome {
+    padding: 80px 15px;
+  }
+  .welcome h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+  }
 }
