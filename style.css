@@ -37,34 +37,30 @@ body {
   margin: 10px 0;
 }
 
-/* Navigation menu with circular beige tabs */
+/* Navigation menu with independent oval tabs */
 nav {
-  background-color: #006400; /* dark green bar */
+  background-color: #fdf6e3; /* beige background behind tabs */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
   gap: 15px;
+  padding: 20px;
 }
 
 nav a {
-  background-color: #fdf6e3; /* beige tabs */
-  color: #006400;
+  background-color: #228B22; /* forest green oval */
+  color: #fdf6e3;            /* beige text */
   text-decoration: none;
-  width: 80px;              /* fixed width */
-  height: 80px;             /* fixed height */
-  border-radius: 50%;       /* perfect circle */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 15px 30px;        /* oval shape */
+  border-radius: 50px;       /* makes it oval */
   font-weight: bold;
+  display: inline-block;
   transition: background-color 0.3s, color 0.3s;
-  text-align: center;
 }
 
 nav a:hover {
-  background-color: #006400;
-  color: #fdf6e3;
+  background-color: #006400; /* darker green on hover */
+  color: #ffffff;
 }
 
 /* Image section */
